@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,7 +6,7 @@
 	<link rel="stylesheet" href="bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="bootstrap/bootstrap-theme.css">
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
@@ -127,10 +126,11 @@
 			</div>
 			<div class="col-md-6 footer-right">
 				<ul class="footer-nav">
-					<li>Nav Item 1</li>
-					<li>Nav Item 2</li>
-					<li>Nav Item 3</li>
-					<li>Nav Item 4</li>
+					<%@li.each do |line|%>
+					<li><%=line%></li>
+
+					<% end %>
+
 				</ul>
 			</div>
 		</div>

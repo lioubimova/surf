@@ -1,0 +1,19 @@
+require 'sinatra'
+
+get "/hi" do
+  "<h1>Hello World</h1>"
+end
+
+get "/bye" do
+"<h1>Goodbuy, cruel world.../h1>"
+
+  end
+
+  get "/current_time" do
+  "<h1>The current time is #{Time.now}.</h1>"
+
+end
+
+    get "/hello/:name" do
+params.inspect
+end
